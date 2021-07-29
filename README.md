@@ -17,7 +17,7 @@ name: deploy
 on:
     push:
         branches:
-            - master
+            - main
             - develop
 
 jobs:
@@ -34,7 +34,7 @@ jobs:
           aws-region: us-east-1
 
       - name: helm deploy
-        uses: koslib/helm-eks-action@master
+        uses: Blue-Express/helm-eks-action@main
         env:
           KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
         with:
@@ -49,7 +49,7 @@ Use the output of your command in later steps
     steps:
       - name: Get URL
         id: url
-        uses: koslib/helm-eks-action@master
+        uses: Blue-Express/helm-eks-action@main
         env:
           KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
         with:
