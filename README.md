@@ -81,3 +81,5 @@ Pull requests, issues or feedback of any kind are more than welcome by anyone!
 
 # references
 * https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html
+* (install aws-cli) https://github.com/aws/aws-cli
+* 
